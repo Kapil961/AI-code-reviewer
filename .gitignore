@@ -1,0 +1,21 @@
+# Environment
+.env
+
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Uploaded files
+uploads/
+
+# Extracted repositories
+extracted/
+
+# Generated reports
+reports/
+
+# OS files
+.DS_Store
