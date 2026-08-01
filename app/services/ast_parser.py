@@ -14,7 +14,7 @@ def parse_python_file(file_path):
 
     try:
         tree = ast.parse(code)
-
+            
     except SyntaxError as e:
         return {
             "file": file_path,
