@@ -72,10 +72,7 @@ if uploaded_file is not None:
 
                 st.markdown(data["ai_review"])
 
-                report_url = (
-                    BACKEND_URL +
-                    data["download_url"]
-                )
+                report_url = BACKEND_URL + data["download_url"]
 
                 st.markdown(
                     f"### 📄 [Download Markdown Report]({report_url})"
@@ -83,10 +80,7 @@ if uploaded_file is not None:
 
             else:
 
-                st.error(
-                    f"Backend Error ({response.status_code})"
-                )
-
+                st.error(f"Backend Error ({response.status_code})")
                 st.code(response.text)
 
         except requests.exceptions.Timeout:
@@ -104,8 +98,4 @@ if uploaded_file is not None:
 
         except Exception as e:
 
-<<<<<<< HEAD
             st.error(f"Unexpected Error:\n{e}")
-=======
-            st.error(f"Unexpected Error:\n{e}")
->>>>>>> 11766d3 (Frontend completed)
